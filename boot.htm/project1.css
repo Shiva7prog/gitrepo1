@@ -1,0 +1,149 @@
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: white;
+}
+header > div{
+    padding-left: 200px;
+    font-weight: bold;
+}
+#id1{
+    color: aqua;
+    letter-spacing: 1px;
+}
+#id2{
+    color: slateblue;
+    letter-spacing: 1px;
+}
+ul{
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    padding-right: 200px;
+    text-size-adjust: 20px;
+}
+ul a{
+    text-decoration: none;
+    color: darkgray;
+    font-size: small;
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 520px; 
+    background-image: url(./home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.main-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(148, 0, 254,0.5); /* Indigo overlay with 50% opacity */
+    z-index: 1;
+}
+
+/* Content area inside the main container */
+.container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2; /* Make sure content is above the overlay */
+    color: white;
+    padding: 20px;
+}
+
+/* Small image next to text */
+.small-image {
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+}
+
+/* Text block beside the small image */
+.text-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-block h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.text-block p {
+    margin-bottom: 5px;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: skyblue;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 25px; /* Rounded corners */
+    margin-top: 10px; 
+    width: 115px; 
+    text-align: center;
+} 
+
+.download-button:hover {
+    background-color: #00aaff;
+}
+
+.team {
+    position: relative;
+    padding: 100px 0; /* Adjust the padding to control the vertical position */
+    background-color: #111; /* Assuming you have a dark background for this section */
+    color: #fff; /* White text */
+}
+
+.team h2 {
+    font-size: 36px; /* Adjust size as needed */
+    font-weight: 700; /* Bold weight */
+    color: #ffffff; /* White text color */
+    text-transform: uppercase; /* Capitalize all letters */
+    letter-spacing: 2px; /* Slight letter spacing */
+    text-align: center; /* Center the text horizontally */
+    margin-bottom: 50px; /* Add space below the heading */
+    margin-top: 0; /* Ensure no margin at the top */
+}
+
+.newtext {
+    text-align: center; /* Center all text inside this div */
+    margin-bottom: 50px; /* Adjust space below the paragraph section */
+}
+
+.newtext pre {
+    color: #fff;
+    font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
+    white-space: pre-wrap; /* Makes sure the text wraps properly */
+    text-align: center;
+}
+
+.team .team-members {
+    display: flex;
+    justify-content: center; /* Centers the team members horizontally */
+    gap: 50px; /* Space between team members */
+    margin-top: 30px; /* Adjust vertical spacing */
+}
+
+.team .team-member {
+    text-align: center; /* Center the content inside each team member */
+}
+
+.team .team-member img {
+    border-radius: 50%;
+    width: 150px; /* Adjust image size */
+    height: 150px; /* Make the image a perfect circle */
+}

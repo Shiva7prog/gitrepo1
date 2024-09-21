@@ -1,0 +1,79 @@
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfVmy2806Ax3-YOM9tYLXtE3maGSSyRNrHeg&s);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header{
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+ul{
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    padding-right: 200px;
+   
+}
+ul a{
+    text-decoration: none;
+}
+.logo{
+    text-align: center; /* Centers the logo horizontally */
+    /* margin-top: 50px; Adjusts the space above the logo */
+}
+
+.oval-logo {
+    width: 100px; /* Adjusts the width of the logo */
+     /* Adjusts the height of the logo */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the entire oval */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow for better appearance */
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 2px;
+}
+.class1{
+    display: flex;
+    width:400px;
+    background-color: aqua;
+    padding:10px;
+}
+.class2{
+    width: 700px;
+    background-color: aquamarine;
+    padding: 10px;
+
+}
+footer{
+    background-color:darkorange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+footer > ul{
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    padding-right: 200px;
+}
+.logo2{
+    text-align: center; /* Centers the logo horizontally */
+    /* margin-top: 50px; Adjusts the space above the logo */
+}
+
+.oval2 {
+    width: 100px; /* Adjusts the width of the logo */
+     /* Adjusts the height of the logo */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the entire oval */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow for better appearance */
+}
